@@ -15,3 +15,18 @@ function isNumberInArray(number, numArray) {
     }
     return false;
 }
+
+// Generating the 16 ("bomb") computer numbers (>= 1 && <= 100)
+// Variables
+var bombNumber = [];
+
+while (bombNumber.length < 16) {
+    var number = randomNumber(1, 100);
+
+    if (!isNumberInArray(number, bombNumber)) {
+     bombNumber.push(number);
+    }
+}
+
+// Remove the following comment to cheat the game (by displaying the "bomb" numbers)
+// console.log ("These are the off-limits numbers! " + bombNumber);
