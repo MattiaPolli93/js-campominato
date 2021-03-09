@@ -51,7 +51,7 @@ console.log("These are your numbers: " + userNumbers);
 
 // Displayed messages (win/lose)
 if (win) {
-    alert("You won!");
+    alert("You won! You got 84 numbers out of 84, congratulations!");
 } else if (lose) {
-    alert("You lost...");
+    alert("You lost... Your final score is " + userNumbers.length + ". Reload and give it one more try?");
 }
