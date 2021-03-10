@@ -7,7 +7,7 @@ function randomNumber(min, max) {
 // Function to check if a number is present in an array
 function isNumberInArray(number, numArray) {
     for (var i = 0; i < numArray.length; i++) {
-        if (number === numArray[i]) {
+        if (number == numArray[i]) {
             return true;
         }
     }
