@@ -1,4 +1,4 @@
-/* Minefield-like Game (with numbers)
+/* Minesweeper-like Game (with Numbers)
 The computer must generate 16 random numbers (between 1 and 100/80/50 according to selected difficulty), which cannot be duplicated. Users must type as many numbers as they can (but not those that have already been inserted) without matching the computer-generated ones, otherwise they would lose. At the end of each game, display the final score. */
 
 /* BONUS - Creating difficulty levels:
@@ -80,7 +80,7 @@ console.log("These are your numbers: " + userNumbers);
 
 // Displayed messages (win/lose)
 if (win) {
-    alert("You won! You got 84 numbers out of 84, congratulations!");
+    alert("You won! You got " + gameNumbers + " numbers out of " + gameNumbers + ", congratulations!");
 } else if (lose) {
     alert("You lost... Your final score is " + userNumbers.length + ". Reload and give it one more try?");
 }
