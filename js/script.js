@@ -1,4 +1,5 @@
-// Minefield-like Game (with numbers)
+/* Minefield-like Game (with numbers)
+The computer must generate 16 random numbers (between 1 and 100/80/50 according to selected difficulty), which cannot be duplicated. Users must type as many numbers as they can (but not those that have already been inserted) without matching the computer-generated ones, otherwise they would lose. At the end of each game, display the final score. */
 
 /* BONUS - Creating difficulty levels:
 Easy (between 1 and 100 numbers)
@@ -14,12 +15,18 @@ do {
 var maxGameNumber;
 
 // Calculating
-if (userChoice === 0) {
-    maxGameNumber = 100;
-} else if (userChoice === 1) {
-    maxGameNumber = 80;
-} else if (userChoice === 2) {
-    maxGameNumber = 50
+switch (userChoice) {
+    case 0:
+        maxGameNumber = 100;  
+        break;
+
+    case 1:
+        maxGameNumber = 80;
+        break;
+
+    case 2:
+        maxGameNumber = 50;
+        break;
 }
 
 // Generating the 16 ("bomb") computer numbers
